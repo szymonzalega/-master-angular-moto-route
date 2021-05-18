@@ -1,0 +1,28 @@
+<div class="list-element" data-testid="list-element">
+  <div class="list-element__title">
+    <span data-testid="route-name">{{ route.name }}</span>
+  </div>
+  <div class="list-element__details-row">
+    <div class="details-row__item details-row__item--red">
+      <mat-icon aria-label="Example home icon">equalizer</mat-icon>
+      <span data-testid="route-level-details" class="item__details">
+        <span class="item__label">Level</span>
+        <span class="item__value">{{ route.level }}</span>
+      </span>
+    </div>
+    <div class="details-row__item details-row__item--green">
+      <mat-icon aria-label="Example home icon">timeline</mat-icon>
+      <span data-testid="route-length-details" class="item__details">
+        <span class="item__label">Length</span>
+        <span class="item__value">{{ route.length }}km</span>
+      </span>
+    </div>
+    <div class="details-row__item details-row__item--blue">
+      <mat-icon aria-label="Example home icon">panorama</mat-icon>
+      <span data-testid="route-type-details" class="item__details">
+        <span class="item__label">Type</span>
+        <span class="item__value">{{ route.type }}</span>
+      </span>
+    </div>
+  </div>
+</div>

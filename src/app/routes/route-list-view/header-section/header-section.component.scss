@@ -1,0 +1,19 @@
+:host {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 3em;
+
+  .mat-stroked-button {
+    border-radius: 15px;
+    color: #f10404;
+    border: 1px solid #f10404;
+  }
+
+  .MuiButton-outlinedSecondary {
+    color: #f10404;
+    border: 1px solid #f10404;
+  }
+}
