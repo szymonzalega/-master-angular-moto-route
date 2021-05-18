@@ -1,0 +1,42 @@
+:host {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 100ms ease-in;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 1px 38px 29px 6px #f7f8fc;
+}
+
+.map-section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 100ms ease-in;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 1px 38px 29px 6px #f7f8fc;
+  
+    > .MuiCircularProgress-colorPrimary {
+      color: #f10404;
+    }
+  
+    &__iframe {
+      border: 0;
+      width: 100%;
+      height: 100%;
+  
+      &--hidden {
+        display: none;
+      }
+    }
+  }
+  
