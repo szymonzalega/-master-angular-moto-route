@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import {Level, RouteType} from "../../route"
 
 @Component({
   selector: 'app-details-section',
@@ -9,8 +10,9 @@ export class DetailsSectionComponent implements OnInit {
 
   constructor() { }
 
-  name = "Nazwa"
-  value = 12
+  @Input() level!: Level
+  @Input() length!: number
+  @Input() type!: RouteType
 
   ngOnInit(): void {
   }

@@ -8,18 +8,26 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 })
 export class MapSectionComponent implements OnInit {
 
-  
+
   constructor(private sanitizer: DomSanitizer) {
-    
+
   }
-  
+
   @Input()
   url!: string;
-
   safeUrl!: SafeResourceUrl;
 
+  createSafeUrl(url: string) {
+    this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(url);
+  }
+
+  ngOnChanges() {
+    this.createSafeUrl(this.url)
+
+  }
+
   ngOnInit(): void {
-    this.safeUrl =  this.sanitizer.bypassSecurityTrustResourceUrl(this.url);
+    this.createSafeUrl(this.url)
   }
 
 }

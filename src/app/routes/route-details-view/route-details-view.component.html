@@ -1,4 +1,10 @@
-<app-title-section text="Route details"></app-title-section>
-<app-description-section [text]="description"></app-description-section>
-<app-details-section></app-details-section>
-<app-map-section [url]="url"></app-map-section>
+<app-title-section [text]="currentRoute.name + ' details'"></app-title-section>
+<app-description-section
+  [text]="currentRoute.description"
+></app-description-section>
+<app-details-section
+  [level]="currentRoute.level"
+  [type]="currentRoute.type"
+  [length]="currentRoute.length"
+></app-details-section>
+<app-map-section [url]="currentRoute.url"></app-map-section>

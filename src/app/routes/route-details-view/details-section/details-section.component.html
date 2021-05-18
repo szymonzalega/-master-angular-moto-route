@@ -1,26 +1,26 @@
 <div class="details-section">
+  <div class="details-item details-item--red">
+    <mat-icon aria-label="Example home icon">equalizer</mat-icon>
+    <div class="details-item__name">Level</div>
+    <div class="details-item__value">{{ level.toUpperCase() }}</div>
+  </div>
 
-    <div class="details-item details-item--red">
-      <mat-icon aria-label="Example home icon">equalizer</mat-icon>
-      <div class="details-item__name">{{name}}</div>
-        <div class="details-item__value">{{value}}</div>
-      </div>
+  <div class="details-item details-item--green">
+    <mat-icon aria-label="Example home icon">timeline</mat-icon>
+    <div class="details-item__name">Length</div>
+    <div class="details-item__value">
+      <span>{{ length }}</span>
+      <span>km</span>
+    </div>
+  </div>
 
-      <div class="details-item details-item--green">
-        <mat-icon aria-label="Example home icon">timeline</mat-icon>
-        <div class="details-item__name">{{name}}</div>
-        <div class="details-item__value">{{value}}</div>
+  <div class="details-item details-item--blue">
+    <mat-icon aria-label="Example home icon">panorama</mat-icon>
+    <div class="details-item__name">Type</div>
+    <div class="details-item__value">{{ type.toUpperCase() }}</div>
+  </div>
 
-      </div>
-
-      <div class="details-item details-item--blue">
-        <mat-icon aria-label="Example home icon">panorama</mat-icon>
-        <div class="details-item__name">{{name}}</div>
-        <div class="details-item__value">{{value}}</div>
-
-      </div>
-
-    <!-- <DetailsItem
+  <!-- <DetailsItem
       icon={() => <TimelineIcon class="details-item--red" />}
       name="Level"
       value={() => <>{level.toUpperCase()}</>}
@@ -40,4 +40,4 @@
       name="Type"
       value={() => <>{type.toString().toUpperCase()}</>}
     /> -->
-  </div>
+</div>
