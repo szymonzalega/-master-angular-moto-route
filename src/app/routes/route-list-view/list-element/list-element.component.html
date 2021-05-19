@@ -1,4 +1,9 @@
-<div class="list-element" data-testid="list-element">
+<a
+  [routerLink]="['/details', route.id]"
+  class="list-element"
+  data-testid="list-element"
+  routerLinkActive="list-element--selected"
+>
   <div class="list-element__title">
     <span data-testid="route-name">{{ route.name }}</span>
   </div>
@@ -25,4 +30,4 @@
       </span>
     </div>
   </div>
-</div>
+</a>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { RoutesService } from '../../routes.service';
 
 @Component({
@@ -8,14 +9,15 @@ import { RoutesService } from '../../routes.service';
 })
 export class RouteListComponent implements OnInit {
 
-  constructor(private routesService: RoutesService) { }
+  items!: Observable<any[]>;
+  routesList!: any;
 
-  routesList = this.routesService.routesList;
 
   ngOnInit(): void {
-    // this.routesService.getRoutes();
-    console.log(this.routesList);
-
+    this.routesService.getRoutes().subscribe((value) => {
+      this.routesList = value
+    })
   }
 
+  constructor(private routesService: RoutesService) { }
 }

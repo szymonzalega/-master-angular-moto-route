@@ -125,6 +125,10 @@
               "devServerTarget": "master-angular-moto-route:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }

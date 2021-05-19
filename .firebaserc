@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "master-moto-route": {
+      "hosting": {
+        "master-angular-moto-route": [
+          "master-moto-route"
+        ]
+      }
+    }
+  }
+}

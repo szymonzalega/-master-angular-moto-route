@@ -6,6 +6,11 @@ import { ListElementComponent } from './route-list-view/list-element/list-elemen
 import { RouteListViewComponent } from './route-list-view/route-list-view.component';
 import { MaterialModule } from '../material/material.module';
 import { TitleSectionComponent } from './title-section/title-section.component';
+import { RouteDetailsViewComponent } from './route-details-view/route-details-view.component';
+import { DescriptionSectionComponent } from './route-details-view/description-section/description-section.component';
+import { DetailsSectionComponent } from './route-details-view/details-section/details-section.component';
+import { MapSectionComponent } from './route-details-view/map-section/map-section.component';
+import { DetailsItemComponent } from './route-details-view/details-item/details-item.component';
 
 
 
@@ -16,6 +21,11 @@ import { TitleSectionComponent } from './title-section/title-section.component';
     ListElementComponent,
     RouteListViewComponent,
     TitleSectionComponent,
+    RouteDetailsViewComponent,
+    DescriptionSectionComponent,
+    DetailsSectionComponent,
+    MapSectionComponent,
+    DetailsItemComponent,
   ],
   imports: [
     CommonModule,
