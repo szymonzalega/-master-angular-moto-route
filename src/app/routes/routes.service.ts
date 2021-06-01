@@ -29,5 +29,17 @@ export class RoutesService {
     return this.routesList;
   }
 
+ createRoute(route: any) {
+    const savedRouteRef = this.firestore.collection("routes").add(route);
+};
+
+updateRoute(route: any) {
+    this.firestore.collection("routes").doc(route.id).set(route);
+};
+
+removeRoute(routeId: string) {
+    this.firestore.collection("routes").doc(routeId).delete();
+};
+
   constructor(private firestore: AngularFirestore) { }
 }

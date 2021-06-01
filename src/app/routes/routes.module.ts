@@ -12,6 +12,8 @@ import { DetailsSectionComponent } from './route-details-view/details-section/de
 import { MapSectionComponent } from './route-details-view/map-section/map-section.component';
 import { DetailsItemComponent } from './route-details-view/details-item/details-item.component';
 import { RouteManageViewComponent } from './route-manage-view/route-manage-view.component';
+import { FormSectionComponent } from './route-manage-view/form-section/form-section.component';
+import { HomeViewComponent } from './home-view/home-view.component';
 
 
 
@@ -28,6 +30,8 @@ import { RouteManageViewComponent } from './route-manage-view/route-manage-view.
     MapSectionComponent,
     DetailsItemComponent,
     RouteManageViewComponent,
+    FormSectionComponent,
+    HomeViewComponent,
   ],
   imports: [
     CommonModule,

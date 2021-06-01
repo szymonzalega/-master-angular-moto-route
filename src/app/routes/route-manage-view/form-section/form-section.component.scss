@@ -1,0 +1,55 @@
+.form-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+  
+    .form-group {
+      margin-bottom: 1.5em;
+    }
+  
+    .form-control {
+      border-radius: 15px;
+  
+      &:focus {
+        border-color: #f10404;
+        box-shadow: 0 0 0 0.2rem #f1040405;
+      }
+    }
+  
+    label {
+      margin-left: 1em;
+      font-weight: 500;
+    }
+  
+    .invalid-feedback {
+      margin-left: 1em;
+    }
+  
+    &__buttons {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      margin-top: 3em;
+  
+      .MuiButton-root {
+        border-radius: 15px;
+        margin-left: 1em;
+      }
+  
+      &--green.MuiButton-outlinedSecondary {
+        color: #009a00;
+        border: 1px solid #009a00;
+  
+        &:hover {
+          border: 1px solid #009a00;
+          background-color: #00800017;
+        }
+      }
+  
+      &--red.MuiButton-outlinedSecondary {
+        color: #f10404;
+        border: 1px solid #f10404;
+      }
+    }
+  }

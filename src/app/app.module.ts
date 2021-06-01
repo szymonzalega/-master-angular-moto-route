@@ -12,6 +12,8 @@ import { RouteListViewComponent } from './routes/route-list-view/route-list-view
 import { HeaderSectionComponent } from './routes/route-list-view/header-section/header-section.component';
 import { TitleSectionComponent } from './routes/title-section/title-section.component';
 import { RouteDetailsViewComponent } from './routes/route-details-view/route-details-view.component';
+import { RouteManageViewComponent } from './routes/route-manage-view/route-manage-view.component';
+import { FormSectionComponent } from './routes/route-manage-view/form-section/form-section.component';
 import { DescriptionSectionComponent } from './routes/route-details-view/description-section/description-section.component';
 import { DetailsSectionComponent } from './routes/route-details-view/details-section/details-section.component';
 import { MapSectionComponent } from './routes/route-details-view/map-section/map-section.component';
@@ -19,6 +21,7 @@ import { DetailsItemComponent } from './routes/route-details-view/details-item/d
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { HomeViewComponent } from './routes/home-view/home-view.component';
 
 
 @NgModule({
@@ -30,10 +33,13 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
     RouteListViewComponent,
     TitleSectionComponent,
     RouteDetailsViewComponent,
+    RouteManageViewComponent,
     DescriptionSectionComponent,
     DetailsSectionComponent,
     MapSectionComponent,
-    DetailsItemComponent
+    DetailsItemComponent,
+    FormSectionComponent,
+    HomeViewComponent
   ],
   imports: [
     BrowserModule,
